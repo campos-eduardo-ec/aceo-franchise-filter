@@ -37,3 +37,16 @@ Contact: [Eduardo Campos on Steam](https://steamcommunity.com/profiles/765611983
 ## Credits and license
 
 Original code and authored configuration are MIT-licensed; see LICENSE and THIRD_PARTY_NOTICES.md. Airport CEO, Unity, third-party libraries, company names, logos and official emblems are not relicensed by this repository. This is an unofficial community project.
+
+### Reusing snippets and working with AI
+
+You may reuse code snippets and build upon this project under the MIT
+license. When using AI to develop changes, please keep human supervision:
+understand and review the code, test its behavior, and assess dependencies
+and impact before release. See the bilingual author's note in [LICENSE](LICENSE)
+and the contribution policy in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Você pode reutilizar trechos de código e desenvolver a partir deste
+projeto sob a licença MIT. Ao usar IA, mantenha supervisão humana, revisão
+do código e testes antes da publicação. A orientação complementar não
+altera os termos da MIT.

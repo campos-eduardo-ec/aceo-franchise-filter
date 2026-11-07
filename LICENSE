@@ -19,3 +19,39 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+------------------------------------------------------------------------
+AUTHOR'S NOTE — CODE REUSE AND HUMAN OVERSIGHT (NON-BINDING GUIDANCE)
+
+You are welcome to reuse individual code snippets or build upon this
+project, including in your own projects, under the MIT terms above.
+Retain the copyright and permission notices in copies or substantial
+portions of the Software, as required by that license. Third-party assets
+remain subject to the rights described in THIRD_PARTY_NOTICES.md.
+
+When developing with AI assistance, please maintain a layer of human
+supervision: a person should understand and review generated or modified
+code, test its behavior, and assess its dependencies and impact before
+publishing or distributing it. AI output should not be accepted without
+human review. The developer remains responsible for their changes.
+
+This note expresses the author's development guidance. It does not add
+conditions or restrictions to, or replace, the MIT license above.
+
+NOTA DO AUTOR — REUTILIZAÇÃO E SUPERVISÃO HUMANA (ORIENTAÇÃO)
+
+Você pode reutilizar trechos de código ou desenvolver a partir deste
+projeto, inclusive em projetos próprios, conforme os termos MIT acima.
+Preserve os avisos de direitos autorais e de permissão nas cópias ou
+porções substanciais do software, como exige a licença. Recursos de
+terceiros continuam sujeitos aos direitos descritos em
+THIRD_PARTY_NOTICES.md.
+
+Ao desenvolver com auxílio de IA, mantenha uma camada de supervisão
+humana: uma pessoa deve compreender e revisar o código gerado ou
+modificado, testar seu comportamento e avaliar suas dependências e seus
+impactos antes de publicar ou distribuir. Não aceite a saída da IA sem
+revisão humana. O desenvolvedor continua responsável por suas alterações.
+
+Esta nota expressa uma orientação do autor. Ela não acrescenta condições
+ou restrições nem substitui a licença MIT acima.
