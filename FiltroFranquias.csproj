@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Plugin BepInEx "Filtro de Franquias" para o Airport CEO (Unity 2019.4, Mono). -->
+  <PropertyGroup>
+    <TargetFramework>net46</TargetFramework>
+    <AssemblyName>FiltroFranquias</AssemblyName>
+    <RootNamespace>FiltroFranquias</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- GameDir/Managed/BepInExCore podem ser sobrescritos na linha de comando (-p:GameDir=...). Padroes: Windows (Steam em D:) e Mac. -->
+    <GameDir Condition="'$(GameDir)' == '' And Exists('D:\SteamLibrary\steamapps\common\Airport CEO')">D:\SteamLibrary\steamapps\common\Airport CEO</GameDir>
+    <GameDir Condition="'$(GameDir)' == ''">$(HOME)/Library/Application Support/Steam/steamapps/common/Airport CEO</GameDir>
+    <Managed Condition="'$(Managed)' == '' And Exists('$(GameDir)\Airport CEO_Data\Managed')">$(GameDir)\Airport CEO_Data\Managed</Managed>
+    <Managed Condition="'$(Managed)' == ''">$(GameDir)/Airport CEO.app/Contents/Resources/Data/Managed</Managed>
+    <BepInExCore Condition="'$(BepInExCore)' == ''">$(GameDir)/BepInEx/core</BepInExCore>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(Managed)/Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>$(Managed)/UnityEngine.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(Managed)/UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UI"><HintPath>$(Managed)/UnityEngine.UI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UIModule"><HintPath>$(Managed)/UnityEngine.UIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.TextRenderingModule"><HintPath>$(Managed)/UnityEngine.TextRenderingModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.TextMeshPro"><HintPath>$(Managed)/Unity.TextMeshPro.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="BepInEx"><HintPath>$(BepInExCore)/BepInEx.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(BepInExCore)/0Harmony.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+
+  <!-- Lixo do macOS (AppleDouble, "._*") veio junto na copia da pasta; nao e codigo. -->
+  <ItemGroup>
+    <Compile Remove="**/._*" />
+    <EmbeddedResource Remove="**/._*" />
+    <None Remove="**/._*" />
+  </ItemGroup>
+
+</Project>

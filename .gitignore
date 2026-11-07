@@ -1,0 +1,13 @@
+bin/
+obj/
+.vs/
+.venv/
+__pycache__/
+*.dll
+*.pdb
+*.user
+*.log
+.env
+.env.*
+.DS_Store
+._*
